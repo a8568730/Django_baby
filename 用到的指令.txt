@@ -5,8 +5,11 @@ pip3.4 install django --upgrade
 python3 manage.py migrate
 
 建立APP空專案
-python manage.py startapp polls
+python3 manage.py startapp polls
 
 在模型.py新增了兩個表格 Question和 Choice
-python manage.py makemigrations polls
+python3 manage.py makemigrations polls
 python3 manage.py migrate
+
+新增後臺管理員帳密
+python3 manage.py createsuperuser
