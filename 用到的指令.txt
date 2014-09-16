@@ -1,0 +1,10 @@
+更新 django版本
+pip3.4 install django --upgrade
+
+建立資料庫
+python3 manage.py migrate
+
+建立APP空專案
+python manage.py startapp polls
+
+
