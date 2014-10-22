@@ -18,5 +18,7 @@ class QuestionAdmin(admin.ModelAdmin):
 	search_fields = ['question_text']
 	# 問題清單的資訊
 	list_display = ('question_text', 'pub_date', 'was_published_recently')
+	# 可以按照過濾器，挑出要看的問題表
+	list_filter = ['pub_date']
 admin.site.register(Question, QuestionAdmin)	
 admin.site.register(Choice)
